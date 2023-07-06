@@ -1,5 +1,17 @@
 import { useState } from 'react'
 
+// This demonstrates two approaches:
+// one using currying and the other without currying.
+
+// The With Currying approach utilizes currying and closure to
+// create reusable event handlers for updating state variables.
+// This approach reduces code duplication and improves code readability.
+
+// The Without Currying approach represents the traditional way of
+// handling input changes with separate event handler functions for
+// each input field. This approach serves as a comparison to highlight
+// the benefits of using currying.
+
 function Currying() {
   const [name, setName] = useState<string>('')
   const [email, setEmail] = useState<string>('')
