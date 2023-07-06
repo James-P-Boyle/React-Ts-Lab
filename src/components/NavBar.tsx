@@ -17,6 +17,12 @@ export default function NavBar() {
       >
         Multistep Form
       </NavLink>
+      <NavLink
+        to="/currying"
+        className={({ isActive }) => isActive ? "active-link" : "" }
+      >
+        Currying
+      </NavLink>
     </nav>
   )
 }
