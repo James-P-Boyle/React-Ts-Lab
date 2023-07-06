@@ -1,0 +1,53 @@
+.form-container {
+  position: relative;
+  border: 2px solid #fff;
+  padding: 2rem;
+  margin: 1rem;
+  border-radius: 0.4rem;
+
+  form {
+
+    #step-count {
+      position: absolute;
+      top: 0.5rem;
+      right: 0.5rem;
+    }
+
+    #step-body {
+      display: flex;
+      flex-direction: column;
+      gap: 0.2rem;
+
+      input {
+        padding: 0.4rem;
+        font-size: 1.2rem;
+        flex-grow: 1;
+      }
+    }
+
+    #step-buttons {
+      display: flex;
+      gap: 0.2rem;
+      margin: 0.4rem 0;
+      width: 100%;
+      justify-content: end;
+
+      button {
+        padding: 0.4rem 1rem;
+      }
+    }
+  }
+}
+
+.form-wrapper {
+  text-align: center;
+  margin: 0;
+  margin-bottom: 2rem;
+
+  div {
+    display: grid;
+    gap: 1rem .5rem;
+    justify-content: flex-start;
+    grid-template-columns: auto minmax(0, 1200px);
+  }
+}

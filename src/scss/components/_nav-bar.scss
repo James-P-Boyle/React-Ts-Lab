@@ -1,0 +1,16 @@
+nav {
+  padding: 1rem;
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  gap: 1rem;
+
+  a {
+    color: white;
+    text-decoration: none;
+  }
+
+  .active-link {
+    color: green;
+  }
+}

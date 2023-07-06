@@ -1,0 +1,9 @@
+// Main styles
+@import "main";
+
+// Components
+@import "./components/main-layout";
+@import "./components/nav-bar";
+
+// Multistep Form
+@import "../multistepForm/scss/main";
