@@ -7,7 +7,7 @@ export default function Routing() {
   return (
     <Routes>
       <Route path="/"  element={<MainLayout/>}>
-        <Route index element={<h1>home</h1>}/>
+        <Route index element={<h1 className="bg-red-500">home</h1>}/>
         <Route path="/multistep-form"  element={<MuliStepForm />}/>
       </Route>
     </Routes>
