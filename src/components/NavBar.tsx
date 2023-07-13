@@ -15,7 +15,13 @@ export default function NavBar() {
         to="/multistep-form"
         className={({ isActive }) => isActive ? "active-link" : "" }
       >
-        Multistep Form
+        Multistep_Form
+      </NavLink>
+      <NavLink
+        to="/animate-on-scroll"
+        className={({ isActive }) => isActive ? "active-link" : "" }
+      >
+        Animate_On_Scroll
       </NavLink>
       <NavLink
         to="/dropdown"
