@@ -18,6 +18,18 @@ export default function NavBar() {
         Multistep Form
       </NavLink>
       <NavLink
+        to="/dropdown"
+        className={({ isActive }) => isActive ? "active-link" : "" }
+      >
+        Dropdown
+      </NavLink>
+      <NavLink
+        to="/ref-callback"
+        className={({ isActive }) => isActive ? "active-link" : "" }
+      >
+        CallbackRef
+      </NavLink>
+      <NavLink
         to="/currying"
         className={({ isActive }) => isActive ? "active-link" : "" }
       >
