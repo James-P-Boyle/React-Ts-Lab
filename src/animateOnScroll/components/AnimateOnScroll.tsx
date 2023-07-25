@@ -14,12 +14,12 @@ export default function AnimateOnScroll({
   direction = 'left'
 }: AnimateOnScrollProps) {
 
-  const [ containerRef, isVisible ] = useElementOnScreen({
+  const [containerRef, isVisible] = useElementOnScreen({
     threshold,
     reappear
-  })
+  });
 
-  const translateAxis = direction === 'left' ? '-' : ''
+  const translateAxis = direction === 'left' ? '-' : '';
 
   return (
     <>
@@ -36,6 +36,5 @@ export default function AnimateOnScroll({
         {children}
       </div>
     </>
-  )
+  );
 }
-

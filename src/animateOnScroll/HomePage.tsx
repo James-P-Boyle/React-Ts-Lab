@@ -9,10 +9,10 @@ export default function HomePage() {
   return (
     <>
       <SampleComponent>I'm a normal div</SampleComponent>
-      <AnimateOnScroll direction="right">
+      <AnimateOnScroll direction="right" reappear={true}>
         <SampleComponent>I'm appear on scroll</SampleComponent>
       </AnimateOnScroll>
-      <AnimateOnScroll reappear={true}>
+      <AnimateOnScroll reappear={true} direction="left">
         <SampleComponent>I'm appear on scroll</SampleComponent>
       </AnimateOnScroll>
     </>

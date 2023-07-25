@@ -24,6 +24,12 @@ export default function NavBar() {
         Animate_On_Scroll
       </NavLink>
       <NavLink
+        to="/swipe"
+        className={({ isActive }) => isActive ? "active-link" : "" }
+      >
+        Swipe_Page
+      </NavLink>
+      <NavLink
         to="/dropdown"
         className={({ isActive }) => isActive ? "active-link" : "" }
       >
