@@ -45,7 +45,7 @@ export default function Draggable({children, onSwipeLeft, onSwipeRight}: Draggab
         id='targetEl'
         ref={recRef}
         draggable='true'
-        onDragStart={(e: React.DragEvent<HTMLElement>) => setStartX(e.clientX)}
+        onDragStart={(e: React.DragEvent<HTMLElement>) => startXRef.current = e.clientX}
         onDrag={handleDrag}
         style={{
           ...style,
